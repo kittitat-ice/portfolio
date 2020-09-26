@@ -1,1 +1,0 @@
-My quick and simple portfolio using [Gatsby](https://www.gatsbyjs.com/) and [simplefolio](https://www.gatsbyjs.com/starters/cobidev/gatsby-simplefolio/)
