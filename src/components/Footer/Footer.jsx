@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="social-links">
           {networks &&
             networks.map((network) => {
-              const { id, name, url } = network;
+              const { id, name, url, title } = network;
               return (
                 <a
                   key={id}
@@ -32,18 +32,20 @@ const Footer = () => {
                   aria-label={name}
                 >
                   <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
+                  <p>{title}</p>
                 </a>
-              );
+              )
             })}
         </div>
         <hr />
+        {/* CREDIT TO JACOBO MARTINEZ
         <p className="footer__text">
           © {new Date().getFullYear()} - Template developed by{' '}
           <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
             Jacobo Martínez
           </a>
         </p>
-
+        */}
         {isEnabled && <GithubButtons />}
       </Container>
     </footer>
